@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body class="bg-[#3A4663] flex items-center justify-center flex-col">
+    <div
+      class="flex flex-col text-[#FFF] font-bold items-center gap-[32px] pt-[30px]  md:pt-[60px] "
+    >
+      <header
+        class="flex justify-between w-[320px] h-[44px] items-center gap-[20px] md:w-[520px]"
+      >
+        <h1 class="text-[32px] not-italic">calc</h1>
+        <div class="flex justify-between items-center gap-[20px]">
+          <h2 class="text-[12px] not-italic font-bold">THEME</h2>
+          <div class="flex flex-col items-center justify-center">
+            <div id="nums" class="flex justify-center items-center gap-[15px]">
+              <h3 class="text-[12px] font-bold not-italic">1</h3>
+              <h3 class="text-[12px] font-bold not-italic">2</h3>
+              <h3 class="text-[12px] font-bold not-italic">3</h3>
+            </div>
+            <input
+              id="bg-mode"
+              class="w-[71px] h-[26px] rounded-[13px] bg-[#242D44]"
+              type="range"
+              min="1"
+              max="3"
+              value="1"
+            />
+          </div>
+        </div>
+      </header>
+    
+        <div
+          id="dashboard"         
+          class="w-[327px] h-[88px] bg-[#181F33] rounded-[10px] md:w-[520px] md:h-[128px]"
+>  <div id="values" class="flex flex-col items-end pr-[5px]">
+  <p id="prev-value"  class=" text-[15px] md:text-[20px] text-right text-gray-400 ">0</p>
+  <p id="current-Value" class="text-[40px] md:text-[56px]">0</p></div>
+
+</div>      
+
+    <main class="w-[327px] h-[420px] rounded-[10px] bg-[#242D44] mt-[40px] md:w-[520px]">
+      <div
+        id="calc-keyboard"
+        class="flex flex-wrap flex-row gap-[13px] justify-center items-center mt-[24px] ml-[24px] mr-[24px] text-center text-[40px] font-bold text-[#434A59] not-italic"
+      >
+        <button value="number" class="number">7</button>
+        <button value="number" class="number">8</button>
+        <button value="number"  class="number">9</button>
+        <button value="operator"
+        id="del"
+        class="w-[60px] h-[64px] rounded-[5px] bg-[#647198] text-[#FFF] text-[20px] text-center font-bold flex items-center justify-center" 
+      >DEL</button>
+        <button value="number" class="number">4</button>
+        <button value="number" class="number">5</button>
+        <button value="number" class="number">6</button>
+        <button value="operator" class="number">+</button>
+        <button value="number" class="number">1</button>
+        <button value="number" class="number">2</button>
+        <button value="number" class="number">3</button>
+        <button value="operator"class="number">-</button>
+        <button value="number"  class="number">.</button>
+        <button value="number" class="number">0</button>
+        <button value="operator" class="number" >/</button>
+        <button value="multiply" class="number" >*</button>
+      <button value="operator" id="reset" 
+      class="w-[133px] h-[64px] rounded-md bg-[#647198] text-center text-[20px] font-bold flex justify-center items-center text-[#FFF]"
+    >RESET</button>
+
+        <button value="operator"
+         id="calculate"
+          class="w-[133px] h-[64px] rounded-md bg-[#D03F2F] text-center text-[20px] font-bold flex justify-center items-center text-[#FFF]"
+        >=</button>
+
+      </div>
+     
+
+     
+    </main>
+  </body>
+</html>
